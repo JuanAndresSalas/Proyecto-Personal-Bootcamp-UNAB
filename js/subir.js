@@ -1,4 +1,6 @@
 var  image;
+
+
 function changefile()
 {
   var a = document.getElementById("canvas");
