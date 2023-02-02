@@ -48,14 +48,39 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <input class="form-control" type = "file" id = "file" accept ="image/*" multiple = false onchange = "changefile()">
-              <form action="" class="col-6 mt-3" id="formSubir">
-                <label for="descripcionOferta">Descripcion:</label>
-                <input type="text" id="descripcionOferta" class="inputSubir mt-2 form-control">
-                <label for="descripcionOferta" class="form-label">Precio:</label>
-                <input type="number" id="descripcionOferta" min="1" class="mt-1 inputSubir form-control">
+              <form  class="col-6 mt-3 needs-validation"  id="formSubir" novalidate>
+                <div>
+                  <input class="form-control" type = "file" id = "file" accept ="image/*" multiple = false onchange = "changefile()" required>
+                  <div class="invalid-feedback">
+                    Debe ingresar una descripcion
+                  </div>
+                  <div class="valid-feedback">
+                    Ok!
+                  </div>
+                </div>
+                
+                <div>
+                  <label for="descripcionOferta" class="form-label">Descripcion:</label>
+                  <input type="text" id="descripcionOferta" class="inputSubir mt-2 form-control" required>
+                  <div class="invalid-feedback">
+                    Debe ingresar una descripcion
+                  </div>
+                  <div class="valid-feedback">
+                    Ok!
+                  </div>
+                </div>
+                <div>
+                  <label for="descripcionOferta" class="form-label">Precio:</label>
+                  <input type="number" id="descripcionOferta" min="1" class="mt-1 inputSubir form-control" required>
+                  <div class="invalid-feedback">
+                    Debe ingresar un precio
+                  </div>
+                  <div class="valid-feedback">
+                    Ok!
+                  </div>
+                </div>
+                <button type="submit" class="mt-3 btn btn-dark" id="botonSubir">Subir</button>
               </form>
-              <button class="mt-3 btn btn-dark" id="botonSubir">Subir</button>
             </div>
           </div>
         </div>
@@ -67,5 +92,25 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/subir.js"></script>
     <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script>// Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+      (function () {
+        'use strict'
+      
+        // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Bucle sobre ellos y evitar el envío
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()</script>
 </body>
 </html>

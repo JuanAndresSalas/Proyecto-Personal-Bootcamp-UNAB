@@ -1,6 +1,7 @@
 var  image;
 
 
+
 function changefile()
 {
   var a = document.getElementById("canvas");
@@ -8,3 +9,7 @@ function changefile()
   image = new SimpleImage(b);
   image.drawTo(a);
 }
+
+
+
+
