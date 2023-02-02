@@ -1,0 +1,35 @@
+#bordeCard{
+    border: 1px black solid;
+}
+
+#contenedorSubir{
+    display: flex;
+    justify-content: center;
+}
+
+
+#canvas{
+
+  border-right :1px solid rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+  }
+.inputSubir{
+    border-radius: 2cm;
+    padding-left: 5%;
+    width: 100%;
+}
+
+#formSubir{
+    width: 100%;
+}
+
+#botonSubir{
+    width: 100%;
+}

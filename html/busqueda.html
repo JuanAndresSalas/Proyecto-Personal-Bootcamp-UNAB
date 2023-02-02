@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/busqueda.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    
+    
 </head>
 <body>
     <header>
@@ -36,8 +39,56 @@
               </div>
             </div>
         </nav>
-    </header>
+    </header> 
+    <main class="mt-5">
+      <div class="input-group flex-nowrap " id="divBusqueda">
+        <input type="text" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" aria-describedby="addon-wrapping">
+        <span class="input-group-text " id="addon-wrapping"><button id="botonBuscar">Buscar</button></span>
+      </div>
+      <div id="divCards" class="container row mt-5">
+        <div class="card " style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+        <div class="card " style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="/img/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/busqueda.js"></script>
+    
+    
 </body>
 </html>
